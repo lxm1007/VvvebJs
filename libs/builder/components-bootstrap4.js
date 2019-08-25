@@ -68,7 +68,7 @@ function changeNodeName(node, newNodeName)
 	return newNode;
 }
 
-Vvveb.ComponentsGroup['Bootstrap 4'] =
+Vvveb.ComponentsGroup['Bootstrap4 组件'] =
 ["html/container", "html/gridrow", "html/button", "html/buttongroup", "html/buttontoolbar", "html/heading", "html/image", "html/jumbotron", "html/alert", "html/card", "html/listgroup", "html/hr", "html/taglabel", "html/badge", "html/progress", "html/navbar", "html/breadcrumbs", "html/pagination", "html/form", "html/textinput", "html/textareainput", "html/selectinput", "html/fileinput", "html/checkbox", "html/radiobutton", "html/table", "html/paragraph", "html/link", "html/video", "html/button"];
 
 
@@ -914,7 +914,7 @@ Vvveb.Components.extend("_base", "html/container", {
     classes: ["container", "container-fluid"],
     image: "icons/container.svg",
     html: '<div class="container" style="min-height:150px;"><div class="m-5">Container</div></div>',
-    name: "Container",
+    name: "Container容器",
     properties: [
      {
         name: "Type",
@@ -958,7 +958,7 @@ Vvveb.Components.extend("_base", "html/container", {
 
 Vvveb.Components.extend("_base", "html/heading", {
     image: "icons/heading.svg",
-    name: "Heading",
+    name: "H1标题",
     nodes: ["h1", "h2","h3", "h4","h5","h6"],
     html: "<h1>Heading</h1>",
     
@@ -1007,7 +1007,7 @@ Vvveb.Components.extend("_base", "html/heading", {
 });    
 Vvveb.Components.extend("_base", "html/link", {
     nodes: ["a"],
-    name: "Link",
+    name: "链接",
     html: '<a href="#" class="d-inline-block"><span>Link</span></a>',
 	image: "icons/link.svg",
     properties: [{
@@ -1024,7 +1024,7 @@ Vvveb.Components.extend("_base", "html/link", {
 });
 Vvveb.Components.extend("_base", "html/image", {
     nodes: ["img"],
-    name: "Image",
+    name: "图片",
     html: '<img src="' +  Vvveb.baseUrl + 'icons/image.svg" height="128" width="128">',
     /*
     afterDrop: function (node)
@@ -1062,7 +1062,7 @@ Vvveb.Components.add("html/hr", {
     html: "<hr>"
 });
 Vvveb.Components.extend("_base", "html/label", {
-    name: "Label",
+    name: "文字",
     nodes: ["label"],
     html: '<label for="">Label</label>',
     properties: [{
@@ -1074,7 +1074,7 @@ Vvveb.Components.extend("_base", "html/label", {
 });
 Vvveb.Components.extend("_base", "html/button", {
     classes: ["btn", "btn-link"],
-    name: "Button",
+    name: "按钮",
     image: "icons/button.svg",
     html: '<button type="button" class="btn btn-primary">Primary</button>',
     properties: [{
@@ -1176,7 +1176,7 @@ Vvveb.Components.extend("_base", "html/button", {
 });
 Vvveb.Components.extend("_base", "html/buttongroup", {
     classes: ["btn-group"],
-    name: "Button Group",
+    name: "按钮组",
     image: "icons/button_group.svg",
     html: '<div class="btn-group" role="group" aria-label="Basic example"><button type="button" class="btn btn-secondary">Left</button><button type="button" class="btn btn-secondary">Middle</button> <button type="button" class="btn btn-secondary">Right</button></div>',
 	properties: [{
@@ -1219,7 +1219,7 @@ Vvveb.Components.extend("_base", "html/buttongroup", {
 });
 Vvveb.Components.extend("_base", "html/buttontoolbar", {
     classes: ["btn-toolbar"],
-    name: "Button Toolbar",
+    name: "工具栏",
     image: "icons/button_toolbar.svg",
     html: '<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">\
 		  <div class="btn-group mr-2" role="group" aria-label="First group">\
@@ -1240,7 +1240,7 @@ Vvveb.Components.extend("_base", "html/buttontoolbar", {
 });
 Vvveb.Components.extend("_base","html/alert", {
     classes: ["alert"],
-    name: "Alert",
+    name: "弹窗提示（alert）",
     image: "icons/alert.svg",
     html: '<div class="alert alert-warning alert-dismissible fade show" role="alert">\
 		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">\
@@ -1286,7 +1286,7 @@ Vvveb.Components.extend("_base","html/alert", {
 Vvveb.Components.extend("_base", "html/badge", {
     classes: ["badge"],
     image: "icons/badge.svg",
-    name: "Badge",
+    name: "徽章",
     html: '<span class="badge badge-primary">Primary badge</span>',
     properties: [{
         name: "Color",
@@ -1329,7 +1329,7 @@ Vvveb.Components.extend("_base", "html/badge", {
 Vvveb.Components.extend("_base", "html/card", {
     classes: ["card"],
     image: "icons/panel.svg",
-    name: "Card",
+    name: "卡片",
     html: '<div class="card">\
 		  <img class="card-img-top" src="../libs/builder/icons/image.svg" alt="Card image cap" width="128" height="128">\
 		  <div class="card-body">\
@@ -1340,19 +1340,19 @@ Vvveb.Components.extend("_base", "html/card", {
 		</div>'
 });
 Vvveb.Components.extend("_base", "html/listgroup", {
-    name: "List Group",
+    name: "列表组",
     image: "icons/list_group.svg",
     classes: ["list-group"],
     html: '<ul class="list-group">\n  <li class="list-group-item">\n    <span class="badge">14</span>\n    Cras justo odio\n  </li>\n  <li class="list-group-item">\n    <span class="badge">2</span>\n    Dapibus ac facilisis in\n  </li>\n  <li class="list-group-item">\n    <span class="badge">1</span>\n    Morbi leo risus\n  </li>\n</ul>'
 });
 Vvveb.Components.extend("_base", "html/listitem", {
-    name: "List Item",
+    name: "列表元素",
     classes: ["list-group-item"],
     html: '<li class="list-group-item"><span class="badge">14</span> Cras justo odio</li>'
 });
 Vvveb.Components.extend("_base", "html/breadcrumbs", {
     classes: ["breadcrumb"],
-    name: "Breadcrumbs",
+    name: "面包屑",
     image: "icons/breadcrumbs.svg",
     html: '<ol class="breadcrumb">\
 		  <li class="breadcrumb-item active"><a href="#">Home</a></li>\
@@ -1362,7 +1362,7 @@ Vvveb.Components.extend("_base", "html/breadcrumbs", {
 });
 Vvveb.Components.extend("_base", "html/breadcrumbitem", {
 	classes: ["breadcrumb-item"],
-    name: "Breadcrumb Item",
+    name: "面包屑元素",
     html: '<li class="breadcrumb-item"><a href="#">Library</a></li>',
     properties: [{
         name: "Active",
@@ -1378,7 +1378,7 @@ Vvveb.Components.extend("_base", "html/breadcrumbitem", {
 });
 Vvveb.Components.extend("_base", "html/pagination", {
     classes: ["pagination"],
-    name: "Pagination",
+    name: "分页",
     image: "icons/pagination.svg",
     html: '<nav aria-label="Page navigation example">\
 	  <ul class="pagination">\
@@ -1431,7 +1431,7 @@ Vvveb.Components.extend("_base", "html/pagination", {
 Vvveb.Components.extend("_base", "html/pageitem", {
 	classes: ["page-item"],
     html: '<li class="page-item"><a class="page-link" href="#">1</a></li>',
-    name: "Pagination Item",
+    name: "分页条目",
     properties: [{
         name: "Link To",
         key: "href",
@@ -1452,7 +1452,7 @@ Vvveb.Components.extend("_base", "html/pageitem", {
 });
 Vvveb.Components.extend("_base", "html/progress", {
     classes: ["progress"],
-    name: "Progress Bar",
+    name: "进度条",
     image: "icons/progressbar.svg",
     html: '<div class="progress"><div class="progress-bar w-25"></div></div>',
     properties: [{
@@ -1528,7 +1528,7 @@ Vvveb.Components.extend("_base", "html/progress", {
 Vvveb.Components.extend("_base", "html/jumbotron", {
     classes: ["jumbotron"],
     image: "icons/jumbotron.svg",
-    name: "Jumbotron",
+    name: "跳转按钮",
     html: '<div class="jumbotron">\
 		  <h1 class="display-3">Hello, world!</h1>\
 		  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>\
@@ -1542,7 +1542,7 @@ Vvveb.Components.extend("_base", "html/jumbotron", {
 Vvveb.Components.extend("_base", "html/navbar", {
     classes: ["navbar"],
     image: "icons/navbar.svg",
-    name: "Nav Bar",
+    name: "导航栏",
     html: '<nav class="navbar navbar-expand-lg navbar-light bg-light">\
 		  <a class="navbar-brand" href="#">Navbar</a>\
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">\
@@ -1622,7 +1622,7 @@ Vvveb.Components.extend("_base", "html/navbar", {
 Vvveb.Components.extend("_base", "html/form", {
     nodes: ["form"],
     image: "icons/form.svg",
-    name: "Form",
+    name: "表单",
     html: '<form><div class="form-group"><label>Text</label><input type="text" class="form-control"></div></div></form>',
     properties: [{
         name: "Style",
@@ -1659,7 +1659,7 @@ Vvveb.Components.extend("_base", "html/form", {
 });
 
 Vvveb.Components.extend("_base", "html/textinput", {
-    name: "Text Input",
+    name: "文本输入",
 	attributes: {"type":"text"},
     image: "icons/text_input.svg",
     html: '<div class="form-group"><label>Text</label><input type="text" class="form-control"></div></div>',
@@ -1678,7 +1678,7 @@ Vvveb.Components.extend("_base", "html/textinput", {
 
 Vvveb.Components.extend("_base", "html/selectinput", {
 	nodes: ["select"],
-    name: "Select Input",
+    name: "下拉框输入",
     image: "icons/select_input.svg",
     html: '<div class="form-group"><label>Choose an option </label><select class="form-control"><option value="value1">Text 1</option><option value="value2">Text 2</option><option value="value3">Text 3</option></select></div>',
 
@@ -1756,12 +1756,12 @@ Vvveb.Components.extend("_base", "html/selectinput", {
 	}]
 });
 Vvveb.Components.extend("_base", "html/textareainput", {
-    name: "Text Area",
+    name: "文本域",
     image: "icons/text_area.svg",
     html: '<div class="form-group"><label>Your response:</label><textarea class="form-control"></textarea></div>'
 });
 Vvveb.Components.extend("_base", "html/radiobutton", {
-    name: "Radio Button",
+    name: "单选按钮",
 	attributes: {"type":"radio"},
     image: "icons/radio.svg",
     html: '<label class="radio"><input type="radio"> Radio</label>',
@@ -1773,7 +1773,7 @@ Vvveb.Components.extend("_base", "html/radiobutton", {
     }]
 });
 Vvveb.Components.extend("_base", "html/checkbox", {
-    name: "Checkbox",
+    name: "复选框",
     attributes: {"type":"checkbox"},
     image: "icons/checkbox.svg",
     html: '<label class="checkbox"><input type="checkbox"> Checkbox</label>',
@@ -1785,7 +1785,7 @@ Vvveb.Components.extend("_base", "html/checkbox", {
     }]
 });
 Vvveb.Components.extend("_base", "html/fileinput", {
-    name: "Input group",
+    name: "输入框组",
 	attributes: {"type":"file"},
     image: "icons/text_input.svg",
     html: '<div class="form-group">\
@@ -1796,7 +1796,7 @@ Vvveb.Components.extend("_base", "html/table", {
     nodes: ["table"],
     classes: ["table"],
     image: "icons/table.svg",
-    name: "Table",
+    name: "表格",
     html: '<table class="table">\
 		  <thead>\
 			<tr>\
@@ -1957,7 +1957,7 @@ Vvveb.Components.extend("_base", "html/table", {
 });
 Vvveb.Components.extend("_base", "html/tablerow", {
     nodes: ["tr"],
-    name: "Table Row",
+    name: "表格行元素",
     html: "<tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td></tr>",
     properties: [{
         name: "Type",
@@ -1987,17 +1987,17 @@ Vvveb.Components.extend("_base", "html/tablerow", {
 });
 Vvveb.Components.extend("_base", "html/tablecell", {
     nodes: ["td"],
-    name: "Table Cell",
+    name: "表格单元",
     html: "<td>Cell</td>"
 });
 Vvveb.Components.extend("_base", "html/tableheadercell", {
     nodes: ["th"],
-    name: "Table Header Cell",
+    name: "表格头单元",
     html: "<th>Head</th>"
 });
 Vvveb.Components.extend("_base", "html/tablehead", {
     nodes: ["thead"],
-    name: "Table Head",
+    name: "表格头",
     html: "<thead><tr><th>Head 1</th><th>Head 2</th><th>Head 3</th></tr></thead>",
     properties: [{
         name: "Type",
@@ -2027,7 +2027,7 @@ Vvveb.Components.extend("_base", "html/tablehead", {
 });
 Vvveb.Components.extend("_base", "html/tablebody", {
     nodes: ["tbody"],
-    name: "Table Body",
+    name: "表格体",
     html: "<tbody><tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td></tr></tbody>"
 });
 
@@ -2067,7 +2067,7 @@ Vvveb.Components.add("html/gridcolumn", {
 	}]
 });
 Vvveb.Components.add("html/gridrow", {
-    name: "Grid Row",
+    name: "栅格",
     image: "icons/grid_row.svg",
     classes: ["row"],
     html: '<div class="row"><div class="col-sm-4"><h3>col-sm-4</h3></div><div class="col-sm-4 col-5"><h3>col-sm-4</h3></div><div class="col-sm-4"><h3>col-sm-4</h3></div></div>',
@@ -2173,7 +2173,7 @@ Vvveb.Components.add("html/gridrow", {
 
 Vvveb.Components.extend("_base", "html/paragraph", {
     nodes: ["p"],
-    name: "Paragraph",
+    name: "段落",
 	image: "icons/paragraph.svg",
 	html: '<p>Lorem ipsum</p>',
     properties: [{
@@ -2216,7 +2216,7 @@ Vvveb.Components.extend("_base", "html/paragraph", {
 
 Vvveb.Components.extend("_base", "html/video", {
     nodes: ["video"],
-    name: "Video",
+    name: "视频",
     html: '<video width="320" height="240" playsinline loop autoplay><source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"><video>',
     dragHtml: '<img  width="320" height="240" src="' + Vvveb.baseUrl + 'icons/video.svg">',
 	image: "icons/video.svg",
@@ -2267,7 +2267,7 @@ Vvveb.Components.extend("_base", "html/video", {
 
 Vvveb.Components.extend("_base", "html/button", {
     nodes: ["button"],
-    name: "Html Button",
+    name: "Html原生按钮",
     image: "icons/button.svg",
     html: '<button>Button</button>',
     properties: [{
@@ -2313,7 +2313,7 @@ Vvveb.Components.extend("_base", "html/button", {
 Vvveb.Components.extend("_base", "_base", {
 	 properties: [
 	 {
-        name: "Font family",
+        name: "字体",
         key: "font-family",
 		htmlAttr: "style",
         sort: base_sort++,

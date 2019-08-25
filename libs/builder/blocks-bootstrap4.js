@@ -16,12 +16,12 @@ limitations under the License.
 https://github.com/givanz/Vvvebjs
 */
 
-Vvveb.BlocksGroup['Bootstrap 4 Snippets'] =
+Vvveb.BlocksGroup['Bootstrap4小组件'] =
 ["bootstrap4/signin-split", "bootstrap4/slider-header", "bootstrap4/image-gallery", "bootstrap4/video-header", "bootstrap4/about-team", "bootstrap4/portfolio-one-column", "bootstrap4/portfolio-two-column", "bootstrap4/portfolio-three-column", "bootstrap4/portfolio-four-column"];
 
 
 Vvveb.Blocks.add("bootstrap4/signin-split", {
-    name: "Modern Sign In Page with Split Screen Format",
+    name: "具有分屏的登陆页",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/product.png">',    
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/sign-in-split.jpg",
     html: `
@@ -147,7 +147,7 @@ Vvveb.Blocks.add("bootstrap4/signin-split", {
 });    
 
 Vvveb.Blocks.add("bootstrap4/image-gallery", {
-    name: "Image gallery",
+    name: "照片画廊",
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/thumbnail-gallery.jpg",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/product.png">',    
     html: `
@@ -226,7 +226,7 @@ Vvveb.Blocks.add("bootstrap4/image-gallery", {
 });    
 
 Vvveb.Blocks.add("bootstrap4/slider-header", {
-    name: "Image Slider Header",
+    name: "轮播图",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/product.png">',        
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/full-slider.jpg",
     html:`
@@ -287,7 +287,7 @@ Vvveb.Blocks.add("bootstrap4/slider-header", {
 
 
 Vvveb.Blocks.add("bootstrap4/video-header", {
-    name: "Video Header",
+    name: "首页视频",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/image.svg">',        
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/video-header.jpg",
     html:`
@@ -371,7 +371,7 @@ header.video .overlay {
 
 
 Vvveb.Blocks.add("bootstrap4/about-team", {
-    name: "About and Team Section",
+    name: "竖列图片和介绍",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/image.svg">',        
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/about-team.jpg",
     html:`
@@ -433,7 +433,7 @@ Vvveb.Blocks.add("bootstrap4/about-team", {
 
 
 Vvveb.Blocks.add("bootstrap4/portfolio-one-column", {
-    name: "One Column Portfolio Layout",
+    name: "一栏的组合布局",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/image.svg">',        
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/portfolio-one-column.jpg",
     html:`
@@ -545,7 +545,7 @@ Vvveb.Blocks.add("bootstrap4/portfolio-one-column", {
 
 
 Vvveb.Blocks.add("bootstrap4/portfolio-two-column", {
-    name: "Two Column Portfolio Layout",
+    name: "两栏组合布局",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/image.svg">',        
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/portfolio-one-column.jpg",
     html:`
@@ -656,7 +656,7 @@ Vvveb.Blocks.add("bootstrap4/portfolio-two-column", {
 });
 
 Vvveb.Blocks.add("bootstrap4/portfolio-three-column", {
-    name: "Three Column Portfolio Layout",
+    name: "三栏组合布局",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/image.svg">',        
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/portfolio-three-column.jpg",
     html:`
@@ -768,7 +768,7 @@ Vvveb.Blocks.add("bootstrap4/portfolio-three-column", {
 
 
 Vvveb.Blocks.add("bootstrap4/portfolio-four-column", {
-    name: "Four Column Portfolio Layout",
+    name: "四栏组合布局",
 	dragHtml: '<img src="' + Vvveb.baseUrl + 'icons/image.svg">',        
     image: "https://startbootstrap.com/assets/img/screenshots/snippets/portfolio-four-column.jpg",
     html:`
